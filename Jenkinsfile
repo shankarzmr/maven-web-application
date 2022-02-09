@@ -12,7 +12,7 @@ git branch: 'development', credentialsId: 'e89b00a3-a9a8-4a52-a14f-fcded6e7f0ee'
 stage('Build'){
 sh "${mavenHome}/bin/mvn clean package"
 }
-
+/*
 stage('Executesonarqubereport'){
 sh "${mavenHome}/bin/mvn sonar:sonar"
 }
@@ -26,7 +26,7 @@ sh "scp -o StrictHostKeyChecking=no target/maven-web-application.war ec2-user@13
     
 }
 }
-
+*/
 
 
 } //node closed
